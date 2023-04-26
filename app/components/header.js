@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { mainMenu as menuLinks, site} from '../config'
 
 
-const MenuItem = ({title, path, subMenu, id}) => {
+const MenuItem = ({title, path, subMenu, id, button}) => {
   const router = useRouter()
   if(subMenu){
     const activeChild = subMenu.find((item) => {
@@ -21,6 +21,17 @@ const MenuItem = ({title, path, subMenu, id}) => {
         return(<DropdownItem {...item} key={index} />)
       })}
     </NavDropdown>
+    )
+  }
+
+  if(button){
+    if(title === "Login"){
+        return (
+            <button className="btn btn-outline-success navButton float-right" href={path}>{title}</button>
+        )
+    }
+    return (
+        <button className="btn btn-outline-secondary navButton float-right" href={path}>{title}</button>
     )
   }
     return(
@@ -43,19 +54,28 @@ const DropdownItem = ({title, path, divider}) => {
 }
 
 const Header = () => {
-    return(<Navbar bg="light" expand="lg">
-    <Container fluid>
-      <Navbar.Brand href="/">{site.title}</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-            {menuLinks.map((item, index) => {
-                return(<MenuItem {...item} key={index}></MenuItem>)
-            })}
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>)
+    return(
+    <>
+        <Navbar bg="light" expand="lg" className='navbar'>
+            <Container fluid>
+            {/* <Navbar.Brand href="/">{site.title}</Navbar.Brand> */}
+            <div className='navbarGrid'>
+                <img className="navbarLogo" src="/tagproslogo.png" alt="T A G P R O S" />
+                <b className='navbarLogoText'>T A G P R O S</b>
+            </div>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                    {menuLinks.map((item, index) => {
+                        return(<MenuItem {...item} key={index}></MenuItem>)
+                    })}
+                </Nav>
+            </Navbar.Collapse>
+            </Container>
+        </Navbar>
+        <hr className='navbarHR' />
+    </>
+    )
 }
 
 

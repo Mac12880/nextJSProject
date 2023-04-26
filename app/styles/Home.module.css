@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem; */
   min-height: 100vh;
 }
 
@@ -226,4 +226,57 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+
+
+.hero1Div{
+  /* height: 100%;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+.hero1{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/upcat-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.catchphrase{
+  font-size: 5vw;
+}
+
+.subheading{
+  font-size: 2vw;
+  color: white;
+
+}
+
+
+
+
+/* about */
+
+.about{
+  padding: 10%;
+}
+.aboutGrid{
+  display: flex;
+  justify-content: center;
+}
+.aboutCards{
+  margin: 1%;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 18rem;
 }

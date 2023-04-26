@@ -8,22 +8,36 @@ export const mainMenu = [
         path: '/about',
     },
     {
-        title: 'Dropdown Menu',
+        title: 'Find Classes',
+        path: '/findClasses',
+    },
+    {
+        title: 'College Admission Review',
         id: '1',
         subMenu: [
     {
-        title: 'Home',
-        path: '/',
+        title: 'UPCAT',
+        path: '/upcat',
     },
     {
         divider: true
     },
     {
-        title: 'About',
-        path: '/about',
+        title: 'SAT',
+        path: '/sat',
     },
     ]
-    }
+    },
+    {
+        title: 'Login',
+        path: '/login',
+        button: true,
+    },
+    {
+        title: 'Sign up',
+        path: '/signup',
+        button: true,
+    },
 ]
 
 export const site = {
