@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="d-flex justify-content-end w-100">
                     {menuLinks.map((item, index) => {
                         return(<MenuItem {...item} key={index}></MenuItem>)
                     })}
