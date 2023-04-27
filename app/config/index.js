@@ -5,7 +5,7 @@ export const mainMenu = [
     },
     {
         title: 'About',
-        path: '/about',
+        path: '#about',
     },
     {
         title: 'Find Classes',

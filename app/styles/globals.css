@@ -122,6 +122,7 @@ a {
   padding-top: 14px;
   font-family: 'Fredoka';
   font-weight: 900;
+  letter-spacing: 5px;
   color: black;
 }
 .navButton{
@@ -130,9 +131,72 @@ a {
 }
 
 
+/* UPCAT */
+.upcat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/upcat-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  overflow: hidden;
+  padding-left: 40%;
+  padding-right: 10%;
+}
+.upcatButton{
+  display: inline-block;
+  font-size: 40vw;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.375rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 1.3vh 3.4vw 1.3vh 3.4vw;
+  color: white;
+  border: 0.5vw solid white;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.upcatButton:hover{
+  color: black;
+  background-color: white;
+}
+.upcatButtonText{
+  font-size: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.textShadow{
+  text-shadow: 2px 4px 4px rgba(0,0,0,1);
+}
+
 @media screen and (max-width: 665px){
   .navbarLogoText{
     margin-right: 0px;
+  }
+  .navButton{
+    margin: 5px 0 0 0;
   }
 }
 

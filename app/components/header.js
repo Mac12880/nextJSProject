@@ -57,11 +57,11 @@ const Header = () => {
     return(
     <>
         <Navbar bg="light" expand="lg" className='navbar'>
-            <Container fluid>
+            <Container fluid className='justify-content-center'>
             {/* <Navbar.Brand href="/">{site.title}</Navbar.Brand> */}
             <div className='navbarGrid'>
                 <img className="navbarLogo" src="/tagproslogo.png" alt="T A G P R O S" />
-                <b className='navbarLogoText'>T A G P R O S</b>
+                <b className='navbarLogoText'>TAGPROS</b>
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

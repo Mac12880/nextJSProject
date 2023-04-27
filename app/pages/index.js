@@ -15,19 +15,24 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div
-          className={`${styles.hero1} p-5 text-center bg-image hero1`}
+          className={`${styles.hero1} text-center bg-image hero1`}
+          id='hero1'
         >
             <div className='justify-content-center align-items-center'>
               <div className={`${styles.hero1Div}`}>
-                <div className='text-warning mb-3'>
-                  <b className={`${styles.catchphrase}`}>Unlock your potential</b>
-                </div>
-                <div className='mb-3'>
-                  <b className={`${styles.subheading}`}>Empowering students and educators for a brighter tomorrow.</b>
-                </div>
-                <a className='btn btn-warning' href='#about' role='button'>
-                  Learn More
-                </a>
+                    <b className={`${styles.catchphrase} text-black mb-1`}>
+                      Unlock your potential
+                    </b>
+                    <b className={`${styles.subheading} text-dark mb-4`}>
+                      Empowering students and educators for a brighter tomorrow.
+                    </b>
+                    <a className={`${styles.hero1Button}`} href='#about' role='button'>
+                      <b className={`${styles.hero1ButtonText} `}>Learn More ➤
+                      {/* Learn More ➔ */}
+                      {/* Learn More ➥ */}
+                      {/* Learn More ➔ */}
+                      </b>
+                    </a>
               </div>
             </div>
         </div>
@@ -36,30 +41,76 @@ export default function Home() {
           <div className={`${styles.aboutCards} card`}>
               <div className='card-body'>
                 <b className='card-title'>Students</b>
-                <p className='card-text'>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                </p>
+                <ul></ul>
+                <ul className='list-group-item card-text'>
+                  Learn something new
+                <hr />
+                </ul>
+                <ul className='list-group-item card-text'>
+                  Improve your skills
+                <hr />
+                </ul>
+                <ul className='list-group-item card-text'>
+                  Can enroll to a synchronous class
+                <hr />
+                </ul>
+                <ul className='list-group-item card-text'>
+                  Can purchase videos of classes if you prefer asynchronous
+                <hr />
+                </ul>
+                
               </div>
             </div>
             <div className={`${styles.aboutCards} card`}>
               <div className='card-body'>
                 <b className='card-title'>Teachers</b>
-                <p className='card-text'>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                </p>
+                <ul></ul>
+                <ul className='list-group-item card-text'>
+                  Can create free or paid classes
+                <hr />
+                </ul>
+                <ul className='list-group-item card-text'>
+                  Can have an opportunity to be scouted by School Districts to work overseas
+                <hr />
+                </ul>
               </div>
             </div>
             <div className={`${styles.aboutCards} card`}>
               <div className='card-body'>
-                <b className='card-title'>School District</b>
-                <p className='card-text'>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                </p>
+                <b className='card-title'>School Districts</b>
+                <ul></ul>
+                <ul className='list-group-item card-text'>
+                  Can scout for Teachers who has potential and can hire Teachers
+                <hr />
+                </ul>
               </div>
             </div>
-
           </div>
         </div>
+
+        <div
+              className={`upcat`}
+              id='hero1'
+            >
+            <div className='justify-content-center align-items-center'>
+              <div className={`${styles.hero1Div}`}>
+                <div className='text-white textShadow mb-3'>
+                  <b className={`${styles.catchphrase}`}>UPCAT REVIEWER 2023</b>
+                </div>
+                <div className='mb-3'>
+                  <b className={`${styles.subheading} textShadow`}>After tutoring students for the SATs in the United States, which resulted in a 100% success rate, Tagpros is expanding its review classes to the Philippines, this time for the 2023 UPCAT.</b>
+                </div>
+                <a className={`upcatButton`} href='#about' role='button'>
+                      <b className={`upcatButtonText `}>Learn More ➤
+                      {/* Learn More ➔ */}
+                      {/* Learn More ➥ */}
+                      {/* Learn More ➔ */}
+                      </b>
+                    </a>
+              </div>
+            </div>
+        </div>
+
       </main>
     </>
   )

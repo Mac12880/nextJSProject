@@ -203,13 +203,11 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
+/* @media (min-width: 701px) and (max-width: 1120px) {
+  
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
   }
@@ -217,7 +215,7 @@
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
-}
+} */
 
 @keyframes rotate {
   from {
@@ -231,24 +229,73 @@
 
 
 .hero1Div{
-  /* height: 100%;
-  width: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 .hero1{
   display: flex;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url("../public/upcat-hero.jpg");
+  /* background-image: url("../public/upcat-hero.jpg"); */
+  /* background-image: url("../public/hero1bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10%;
   position: relative;
   overflow: hidden;
+  padding: 10%;
+  /* background: hsla(89, 65%, 52%, 1);
+  background: linear-gradient(225deg, hsla(89, 65%, 52%, 1) 0%, hsla(46, 82%, 50%, 1) 50%, hsla(19, 94%, 62%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(89, 65%, 52%, 1) 0%, hsla(46, 82%, 50%, 1) 50%, hsla(19, 94%, 62%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(89, 65%, 52%, 1) 0%, hsla(46, 82%, 50%, 1) 50%, hsla(19, 94%, 62%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#85D433", endColorstr="#E7B517", GradientType=1 ); */
+
+  background: hsla(189, 73%, 44%, 1);
+  background: linear-gradient(225deg, hsla(189, 73%, 44%, 1) 15%, hsla(89, 65%, 52%, 1) 35%, hsla(46, 82%, 50%, 1) 60%, hsla(19, 94%, 62%, 1) 85%);
+  background: -moz-linear-gradient(225deg, hsla(189, 73%, 44%, 1) 15%, hsla(89, 65%, 52%, 1) 35%, hsla(46, 82%, 50%, 1) 60%, hsla(19, 94%, 62%, 1) 85%);
+  background: -webkit-linear-gradient(225deg, hsla(189, 73%, 44%, 1) 15%, hsla(89, 65%, 52%, 1) 35%, hsla(46, 82%, 50%, 1) 60%, hsla(19, 94%, 62%, 1) 85%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1EA8C1", endColorstr="#85D433", GradientType=1 );
+}
+.hero1Button{
+    display: inline-block;
+    font-size: 40vw;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 1.3vh 3.4vw 1.3vh 3.4vw;
+    color: #000;
+    border: 0.5vw solid #000;
+    background-color: rgba(0, 0, 0, 0);
+    /* color: #ffc107;
+    border: 0.5vw solid #ffc107;
+    background-color: rgba(0, 0, 0, 0); */
+}
+.hero1Button:hover{
+  color: rgba(255,193,7,1);
+  background-color: #000;
+  /* color: #000;
+  background-color: rgba(255,193,7,1); */
+}
+.hero1ButtonText{
+  font-size: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .catchphrase{
@@ -267,7 +314,8 @@
 /* about */
 
 .about{
-  padding: 10%;
+  padding: 3%;
+  width: 100%;
 }
 .aboutGrid{
   display: flex;
@@ -276,7 +324,28 @@
 .aboutCards{
   margin: 1%;
   padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  width: 18rem;
+  width: 30%;
+  border-color: rgba(248, 249, 250, 1);
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+@media screen and (max-width: 665px){
+  .hero1{
+    padding: 10%;
+  }
+  .aboutGrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutCards{
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 80%;
+    border-color: rgba(248, 249, 250, 1);
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
 }
