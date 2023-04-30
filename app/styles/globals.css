@@ -130,6 +130,27 @@ a {
   float: right;
 }
 
+/* Login Navbar */
+.loginNavbar{
+  width: 280px;
+}
+.loginNavbarLogo{
+  width: 40px;
+}
+.loginNavbarLogoText{
+  font-size: calc(1.275rem + 0.3vw);
+  font-family: 'Fredoka';
+}
+.loginNavbarIcon{
+  width: 16px;
+  height: 16px;
+}
+
+/* Login Dashboard */
+.dashboard{
+  width: 80%;
+  padding: 3vw;
+}
 
 /* UPCAT */
 .upcat{
@@ -150,6 +171,7 @@ a {
   overflow: hidden;
   padding-left: 40%;
   padding-right: 10%;
+  /* border-radius: 5px 10px 10px 5px; */
 }
 .upcatButton{
   display: inline-block;
@@ -190,6 +212,19 @@ a {
 .textShadow{
   text-shadow: 2px 4px 4px rgba(0,0,0,1);
 }
+
+/* FOOTER */
+.footer{
+  background-color: #85D433;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 665px){
   .navbarLogoText{

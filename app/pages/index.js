@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +15,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header></Header>
       <main className={`${styles.main} ${inter.className}`}>
+        
         <div
           className={`${styles.hero1} text-center bg-image hero1`}
           id='hero1'
@@ -37,6 +41,7 @@ export default function Home() {
             </div>
         </div>
         <div className={`${styles.about}`} id='about'>
+          <h1 className='d-flex justify-content-center navbarLogoText mb-2'>JOIN TAGPROS AS:</h1>
           <div className={`${styles.aboutGrid}`}>
           <div className={`${styles.aboutCards} card`}>
               <div className='card-body'>
@@ -90,7 +95,7 @@ export default function Home() {
 
         <div
               className={`upcat`}
-              id='hero1'
+              id='upcat'
             >
             <div className='justify-content-center align-items-center'>
               <div className={`${styles.hero1Div}`}>
@@ -101,17 +106,16 @@ export default function Home() {
                   <b className={`${styles.subheading} textShadow`}>After tutoring students for the SATs in the United States, which resulted in a 100% success rate, Tagpros is expanding its review classes to the Philippines, this time for the 2023 UPCAT.</b>
                 </div>
                 <a className={`upcatButton`} href='#about' role='button'>
-                      <b className={`upcatButtonText `}>Learn More ➤
-                      {/* Learn More ➔ */}
-                      {/* Learn More ➥ */}
-                      {/* Learn More ➔ */}
+                      <b className={`upcatButtonText `}>
+                        Learn More ➤
                       </b>
                     </a>
               </div>
             </div>
         </div>
-
+        
       </main>
+      <Footer></Footer>
     </>
   )
 }

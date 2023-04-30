@@ -4,9 +4,19 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useRouter } from 'next/router'
 import { mainMenu as menuLinks, site} from '../config'
+// import { useNavigate } from 'react-router-dom'
+
+import  Link  from 'next/link'
+
 
 
 const MenuItem = ({title, path, subMenu, id, button}) => {
+  // const navigate = useNavigate()
+
+  // const navigateToLogin = (path) => {
+  //   navigate(path)
+  // }
+
   const router = useRouter()
   if(subMenu){
     const activeChild = subMenu.find((item) => {
@@ -27,15 +37,19 @@ const MenuItem = ({title, path, subMenu, id, button}) => {
   if(button){
     if(title === "Login"){
         return (
-            <button className="btn btn-outline-success navButton float-right" href={path}>{title}</button>
+          <Link href={path} passHref>
+            <button className="btn btn-outline-success navButton float-right">{title}</button>
+          </Link>
         )
     }
     return (
+      <Link href={path} passHref>
         <button className="btn btn-outline-secondary navButton float-right" href={path}>{title}</button>
+      </Link>
     )
   }
     return(
-        <Nav.Link active={router.pathname === path} href={path}>{title}</Nav.Link>
+      <Nav.Link active={router.pathname === path} href={path}>{title}</Nav.Link>
     
     )
 }
@@ -49,7 +63,7 @@ const DropdownItem = ({title, path, divider}) => {
   }
 
   return (
-  <NavDropdown.Item active={router.pathname === path} href={path}>{title}</NavDropdown.Item>
+    <NavDropdown.Item active={router.pathname === path} href={path}>{title}</NavDropdown.Item>
   )
 }
 

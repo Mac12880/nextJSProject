@@ -17,7 +17,7 @@ export const mainMenu = [
         subMenu: [
     {
         title: 'UPCAT',
-        path: '/upcat',
+        path: '#upcat',
     },
     {
         divider: true
