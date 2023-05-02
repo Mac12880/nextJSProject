@@ -1,25 +1,24 @@
-import React from 'react'
-import { CiHome } from "react-icons/ci"
+import LoginNavbar from '@/components/loginNavbar'
+import React, { useState } from 'react'
+// import { BsHouse } from "react-icons/bs"
+// import { AiOutlineDashboard } from "react-icons/ai"
+// import { IoDocumentsOutline, IoNewspaperOutline } from "react-icons/io5"
+// import { FiBook } from "react-icons/fi"
+// import { IoMdBook } from "react-icons/io"
+// import { HiOutlineMagnifyingGlass } from "react-icons/hi2"
+
 
 const Login = () => {
+  const [SmallNavbar, setSmallNavbar] = useState(false)
+  
   return (
     <div className='d-flex flex-direction-row justify-content-start'>
-      <div className='loginNavbar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary'>
-        <a href='/' className='d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none'>
-          <img className="loginNavbarLogo" src="/tagproslogo.png" alt="TAGPROS" />
-          <span className='loginNavbarLogoText'>TAGPROS</span>
-        </a>
-        <hr />
-        <ul className='nav nav-pills flex-column mb-auto'>
-          <li className='nav-item'>
-            <a href='#' className='nav-link link-body-emphasis'>
-              <CiHome className='loginNavbarIcon bi pe-none me-2' />
-              " Home "
-            </a>
-          </li>
-        </ul>
-      </div>
-    
+      <LoginNavbar />
+      
+      
+
+      
+      <h1></h1>
     </div>
   )
 }
