@@ -6,6 +6,8 @@ import { FiBook } from "react-icons/fi"
 import { IoMdBook } from "react-icons/io"
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2"
 
+
+
 const LoginNavbar = () => {
   const [toggler, setToggler] = useState(false)
 
@@ -22,8 +24,8 @@ const LoginNavbar = () => {
         <hr />
         <ul className='nav nav-pills flex-column mb-auto'>
           <li className='nav-item'>
-            <a href='#' className='nav-link link-body-emphasis active'>
-              <BsHouse className='loginNavbarIcon bi pe-none me-2' />
+            <a href='#' className='nav-link link-body-emphasis active text-black'>
+              <BsHouse className='loginNavbarIcon bi pe-none me-2 ' />
               Home
             </a>
           </li>
@@ -70,7 +72,7 @@ const LoginNavbar = () => {
           className='d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle text-black border border-light bg-white'
           onClick={handleToggle}
           >
-            <img src="https://github.com/mdo.png"
+            <img src="/profile.jpg"
             className='rounded-circle me-2 loginProfilePic'>
             </img>
             <strong>Marc</strong>

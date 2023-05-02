@@ -1,24 +1,30 @@
 import LoginNavbar from '@/components/loginNavbar'
+import SLoginNavbar from '@/components/sLoginNavbar'
 import React, { useState } from 'react'
-// import { BsHouse } from "react-icons/bs"
-// import { AiOutlineDashboard } from "react-icons/ai"
-// import { IoDocumentsOutline, IoNewspaperOutline } from "react-icons/io5"
-// import { FiBook } from "react-icons/fi"
-// import { IoMdBook } from "react-icons/io"
-// import { HiOutlineMagnifyingGlass } from "react-icons/hi2"
 
+import { RxHamburgerMenu } from "react-icons/rx"
+import { BiArrowToLeft, BiArrowToRight } from "react-icons/bi"
 
 const Login = () => {
-  const [SmallNavbar, setSmallNavbar] = useState(false)
-  
+  const [smallNavbar, setSmallNavbar] = useState(true)
+
+  const handleSmallNavbar = () => {
+    setSmallNavbar((currentState) => !currentState)
+    console.log("clicked")
+  }
+
   return (
     <div className='d-flex flex-direction-row justify-content-start'>
-      <LoginNavbar />
+      {/* <Navbar /> */}
+      {smallNavbar ? (<SLoginNavbar />) : (<LoginNavbar />)}
+      <div className='w-100 dashboard'>
+        <div className='d-flex w-100 headerDashboard text-white'>
+          <RxHamburgerMenu className='sloginNavbarIcon'/>
+          <BiArrowToLeft className='sloginNavbarIcon'/>
+        </div>
+        <h1 className='m-2 p-3'>Content</h1>
+      </div>
       
-      
-
-      
-      <h1></h1>
     </div>
   )
 }
