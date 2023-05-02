@@ -27,7 +27,7 @@ const SLoginNavbar = () => {
             <ul className='nav nav-pills flex-column mb-auto'>
                 <li className='nav-item'>
                     <Tooltip title="Home" placement="right" arrow>
-                    <a href='#' className='nav-link active py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
                         <BsHouse className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>

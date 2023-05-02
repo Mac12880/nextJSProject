@@ -24,7 +24,7 @@ const LoginNavbar = () => {
         <hr />
         <ul className='nav nav-pills flex-column mb-auto'>
           <li className='nav-item'>
-            <a href='#' className='nav-link link-body-emphasis active text-black'>
+            <a href='#' className='nav-link link-body-emphasis text-black'>
               <BsHouse className='loginNavbarIcon bi pe-none me-2 ' />
               Home
             </a>
