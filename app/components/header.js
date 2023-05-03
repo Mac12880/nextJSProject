@@ -71,7 +71,7 @@ const Header = () => {
     return(
     <>
         <Navbar bg="light" expand="lg" className='navbar'>
-            <Container fluid className='justify-content-center'>
+            <Container fluid className='justify-content-sm-between'>
             {/* <Navbar.Brand href="/">{site.title}</Navbar.Brand> */}
             <div className='navbarGrid'>
                 <img className="navbarLogo" src="/tagproslogo.png" alt="T A G P R O S" />

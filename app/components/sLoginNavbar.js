@@ -16,9 +16,9 @@ const SLoginNavbar = () => {
     // console.log("clicked")
     }
     return (
-        <div className='sloginNavbar d-flex flex-column flex-shrink-0 bg-body-tertiary'>
+        <div className='sloginNavbar d-flex flex-column flex-shrink-0'>
             <Tooltip title="TAGPROS" placement="right" arrow>
-                <a href='/' className='d-block p-3 link-body-emphasis text-decoration-none'
+                <a href='/' className='d-flex justify-content-center py-3 px-0 link-body-emphasis text-decoration-none'
                 data-bs-toggle='tooltip' data-bs-placement='right' data-bs-original-title='TAGPROS'>
                     <img className="loginNavbarLogo" src="/tagproslogo.png" alt="TAGPROS" />
                 </a>
@@ -27,49 +27,49 @@ const SLoginNavbar = () => {
             <ul className='nav nav-pills flex-column mb-auto'>
                 <li className='nav-item'>
                     <Tooltip title="Home" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <BsHouse className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="Dashboard" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <AiOutlineDashboard className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="Documents" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <IoDocumentsOutline className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="Classes" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <FiBook className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="My Classes" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <IoMdBook className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="Jobs" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <HiOutlineMagnifyingGlass className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>
                 </li>
                 <li className='nav-item'>
                     <Tooltip title="Job Applications" placement="right" arrow>
-                    <a href='#' className='nav-link py-3 border-bottom rounded-0 d-flex justify-content-center'>
+                    <a href='#' className='nav-link border-bottom py-2 px-0 rounded-0 d-flex justify-content-center'>
                         <IoNewspaperOutline className='sloginNavbarIcon bi pe-none text-black' />
                     </a>
                     </Tooltip>

@@ -127,7 +127,7 @@ a {
 }
 .navButton{
   margin-left: 5px;
-  float: right;
+  /* float: right; */
 }
 
 /* Login Navbar */
@@ -160,9 +160,12 @@ a {
 .loginNavbar{
   width: auto;
   height: 100vh;
+  /* background-color: #f2f2f2; */
 }
 .loginNavbarLogo{
   width: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .loginNavbarLogoText{
   font-size: calc(1.275rem + 0.3vw);
@@ -200,6 +203,9 @@ a {
 /* Login Dashboard */
 .dashboard{
   width: 80%;
+  height: 100vh;
+  /* background-color: #f2f2f2; */
+  /* background-color: black; */
 }
 .headerDashboard{
   height: 73px;
@@ -281,7 +287,7 @@ a {
 
 /* FOOTER */
 .footer{
-  background-color: #85D433;
+  background-color: white;
 }
 
 
@@ -297,7 +303,8 @@ a {
     margin-right: 0px;
   }
   .navButton{
-    margin: 5px 0 0 0;
+    margin-top: 5px;
+    margin-left: 0px;
   }
 }
 

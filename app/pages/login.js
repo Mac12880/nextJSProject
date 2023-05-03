@@ -33,8 +33,9 @@ const Login = () => {
       {/* {smallNavbar ? <SLoginNavbar /> : <LoginNavbar />} */}
       {showNavbar && <Navbar/>}
       <div className='w-100 dashboard'>
-        <div className='d-flex justify-content-between w-100 headerDashboard text-white'>
+        <div className='d-flex justify-content-between w-100 headerDashboard text-white align-items-center '>
           {showNavbar ? <RxCross1 className='headerDashboardIcon' onClick={handleShowNavbar}/> : <RxHamburgerMenu className='headerDashboardIcon' onClick={handleShowNavbar}/>}
+          <b className='loginNavbarLogoText'>TAGPROS</b>
           {smallNavbar ? <BiArrowToRight className='headerDashboardIcon' onClick={handleSmallNavbar}/> : <BiArrowToLeft className='headerDashboardIcon' onClick={handleSmallNavbar}/>}
           
         </div>
