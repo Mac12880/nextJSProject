@@ -16,7 +16,7 @@ const SLoginNavbar = () => {
     // console.log("clicked")
     }
     return (
-        <div className='sloginNavbar d-flex flex-column flex-shrink-0'>
+        <div className='sloginNavbar navbarShadow d-flex flex-column flex-shrink-0'>
             <Tooltip title="TAGPROS" placement="right" arrow>
                 <a href='/' className='d-flex justify-content-center py-3 px-0 link-body-emphasis text-decoration-none'
                 data-bs-toggle='tooltip' data-bs-placement='right' data-bs-original-title='TAGPROS'>

@@ -16,8 +16,8 @@ const LoginNavbar = () => {
     // console.log("clicked")
   }
   return (
-      <div className='loginNavbar d-flex flex-column flex-shrink-0 p-3'>
-        <a href='/' className='d-flex justify-content-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none'>
+      <div className='loginNavbar navbarShadow d-flex flex-column flex-shrink-0 p-3'>
+        <a href='/' className='d-flex justify-content-center  link-body-emphasis text-decoration-none'>
           <img className="loginNavbarLogo" src="/tagproslogo.png" alt="TAGPROS" />
           {/* <span className='loginNavbarLogoText text-black'>TAGPROS</span> */}
         </a>
