@@ -118,6 +118,7 @@ a {
   margin: 0;
 }
 .navbarLogoText{
+  display: absolute;
   margin-right: 50px;
   padding-top: 14px;
   font-family: 'Fredoka';
@@ -139,24 +140,6 @@ a {
   width: 24px;
   height: 24px;
 }
-.sNavbarProfileDD{ 
-  inset: auto auto 0px 0px; 
-  margin: 0px; 
-  transform: translate(0px, -50.4444px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid;
-  border-radius: 0.375rem;
-}
 .loginNavbar{
   width: auto;
   height: 100vh;
@@ -166,7 +149,8 @@ a {
   width: 40px;
 }
 .loginNavbarLogoText{
-  font-size: calc(1.275rem + 0.3vw);
+  /* font-size: calc(1.275rem + 0.3vw); */
+  font-size: clamp(1rem, 2.5vw, 2rem);
   font-family: 'Fredoka';
 }
 .loginNavbarIcon{
@@ -174,12 +158,13 @@ a {
   height: 16px;
 }
 .loginProfilePic{
-  width: 30px;
+  width: 7vw;
+  max-width: 30px;
 }
 .navbarProfileDD{ 
   inset: auto auto 0px 0px; 
   margin: 0px; 
-  transform: translate(0px, -34.4444px);
+  transform: translate(-130px, 105.4444px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   z-index: 1000;
   min-width: 10rem;
@@ -284,6 +269,10 @@ a {
 .textShadow{
   text-shadow: 2px 4px 4px rgba(0,0,0,1);
 }
+.cursorPointer{
+  width: 24px;
+  cursor: pointer;
+}
 
 /* FOOTER */
 .footer{
@@ -314,5 +303,12 @@ a {
     margin-left: 0px;
   }
 }
+
+@media screen and (max-width: 320px){
+  .navbarLogoText{
+    display: none;
+  }
+}
+
 
 
