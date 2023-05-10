@@ -1,30 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Resizer from 'react-image-file-resizer';
 
 function CompressedImage() {
-    const [imageDataUrl, setImageDataUrl] = useState(null);
+  const [compressedImage, setCompressedImage] = useState(null);
 
-    const handleImageChange = (event) => {
-      const file = event.target.files[0];
-      const imageUrl = URL.createObjectURL(file);
-  
-      if (imageUrl) {
-        setImageDataUrl(imageUrl);
+  const handleInputChange = (event) => {
+    const file = event.target.files[0];
+
+    if (file) {
+      try {
+        Resizer.imageFileResizer(
+          file,
+          500, // set maximum width
+          500, // set maximum height
+          'JPEG', // set output format
+          60, // set quality (0 to 100)
+          50, // set maximum size in kilobytes
+          (compressedImage) => {
+            setCompressedImage(compressedImage);
+          },
+          'base64' // set encoding type
+        );
+      } catch (error) {
+        console.error(error);
       }
-    };
-  
-    useEffect(() => {
-      if (imageDataUrl) {
-        return () => URL.revokeObjectURL(imageDataUrl);
-      }
-    }, [imageDataUrl]);
-  
-    return (
-      <div>
-        <input type="file" onChange={handleImageChange} />
-        {imageDataUrl && <img src={imageDataUrl} alt="Image Preview" />}
-      </div>
-    );
+    }
+  };
+
+  return (
+    <div>
+      <input type="file" onChange={handleInputChange} />
+      {compressedImage && (
+        <img src={compressedImage} alt="Compressed Image" />
+      )}
+    </div>
+  );
 }
 
 export default CompressedImage;
