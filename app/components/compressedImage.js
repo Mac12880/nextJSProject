@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Resizer from 'react-image-file-resizer';
-import { ReactImage } from 'react-image';
+import React, { useState } from "react";
+import Resizer from "react-image-file-resizer";
+import { ReactImage } from "react-image";
 
 // create a code to compress the image to 50kb
 
@@ -16,13 +16,13 @@ function CompressedImage() {
           file,
           500, // set maximum width
           500, // set maximum height
-          'JPEG', // set output format
+          "JPEG", // set output format
           60, // set quality (0 to 100)
           50, // set maximum size in kilobytes
           (compressedImage) => {
             setCompressedImage(compressedImage);
           },
-          'base64' // set encoding type
+          "base64" // set encoding type
         );
       } catch (error) {
         console.error(error);
