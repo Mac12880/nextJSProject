@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Resizer from 'react-image-file-resizer';
+import { ReactImage } from 'react-image';
+
+// create a code to compress the image to 50kb
 
 function CompressedImage() {
   const [compressedImage, setCompressedImage] = useState(null);
@@ -31,7 +34,12 @@ function CompressedImage() {
     <div>
       <input type="file" onChange={handleInputChange} />
       {compressedImage && (
-        <img src={compressedImage} alt="Compressed Image" />
+        <ReactImage
+          src={compressedImage}
+          alt="Compressed Image"
+          loader={<div>Loading...</div>}
+          unloader={<div>Failed to load image.</div>}
+        />
       )}
     </div>
   );

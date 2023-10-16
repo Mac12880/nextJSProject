@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
+// import SignIn from "@/pages/signin";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -17,105 +18,109 @@ export default function Home() {
       </Head>
       <Header></Header>
       <main className={`${styles.main} ${inter.className}`}>
-        
         <div
           className={`${styles.hero1} text-center bg-image hero1`}
-          id='hero1'
+          id="hero1"
         >
-            <div className='justify-content-center align-items-center'>
-              <div className={`${styles.hero1Div}`}>
-                    <b className={`${styles.catchphrase} text-black mb-1`}>
-                      Unlock your potential
-                    </b>
-                    <b className={`${styles.subheading} text-dark mb-4`}>
-                      Empowering students and educators for a brighter tomorrow.
-                    </b>
-                    <a className={`${styles.hero1Button}`} href='#about' role='button'>
-                      <b className={`${styles.hero1ButtonText} `}>Learn More ➤
-                      {/* Learn More ➔ */}
-                      {/* Learn More ➥ */}
-                      {/* Learn More ➔ */}
-                      </b>
-                    </a>
-              </div>
+          <div className="justify-content-center align-items-center">
+            <div className={`${styles.hero1Div}`}>
+              <b className={`${styles.catchphrase} text-black mb-1`}>
+                Unlock your potential
+              </b>
+              <b className={`${styles.subheading} text-dark mb-4`}>
+                Empowering students and educators for a brighter tomorrow.
+              </b>
+              <a
+                className={`${styles.hero1Button}`}
+                href="#about"
+                role="button"
+              >
+                <b className={`${styles.hero1ButtonText} `}>
+                  Learn More ➤{/* Learn More ➔ */}
+                  {/* Learn More ➥ */}
+                  {/* Learn More ➔ */}
+                </b>
+              </a>
             </div>
+          </div>
         </div>
-        <div className={`${styles.about}`} id='about'>
-          <h1 className='d-flex justify-content-center navbarLogoText mb-2'>JOIN TAGPROS AS:</h1>
+        <div className={`${styles.about}`} id="about">
+          <h1 className="d-flex justify-content-center navbarLogoText mb-2">
+            JOIN TAGPROS AS:
+          </h1>
           <div className={`${styles.aboutGrid}`}>
-          <div className={`${styles.aboutCards} card`}>
-              <div className='card-body'>
-                <b className='card-title'>Students</b>
+            <div className={`${styles.aboutCards} card`}>
+              <div className="card-body">
+                <b className="card-title">Students</b>
                 <ul></ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Learn something new
-                <hr />
+                  <hr />
                 </ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Improve your skills
-                <hr />
+                  <hr />
                 </ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Can enroll to a synchronous class
-                <hr />
+                  <hr />
                 </ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Can purchase videos of classes if you prefer asynchronous
-                <hr />
+                  <hr />
                 </ul>
-                
               </div>
             </div>
             <div className={`${styles.aboutCards} card`}>
-              <div className='card-body'>
-                <b className='card-title'>Teachers</b>
+              <div className="card-body">
+                <b className="card-title">Teachers</b>
                 <ul></ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Can create free or paid classes
-                <hr />
+                  <hr />
                 </ul>
-                <ul className='list-group-item card-text'>
-                  Can have an opportunity to be scouted by School Districts to work overseas
-                <hr />
+                <ul className="list-group-item card-text">
+                  Can have an opportunity to be scouted by School Districts to
+                  work overseas
+                  <hr />
                 </ul>
               </div>
             </div>
             <div className={`${styles.aboutCards} card`}>
-              <div className='card-body'>
-                <b className='card-title'>School Districts</b>
+              <div className="card-body">
+                <b className="card-title">School Districts</b>
                 <ul></ul>
-                <ul className='list-group-item card-text'>
+                <ul className="list-group-item card-text">
                   Can scout for Teachers who has potential and can hire Teachers
-                <hr />
+                  <hr />
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div
-              className={`upcat`}
-              id='upcat'
-            >
-            <div className='justify-content-center align-items-center'>
-              <div className={`${styles.hero1Div}`}>
-                <div className='text-white textShadow mb-3'>
-                  <b className={`${styles.catchphrase}`}>UPCAT REVIEWER 2023</b>
-                </div>
-                <div className='mb-3'>
-                  <b className={`${styles.subheading} textShadow`}>After tutoring students for the SATs in the United States, which resulted in a 100% success rate, Tagpros is expanding its review classes to the Philippines, this time for the 2023 UPCAT.</b>
-                </div>
-                <a className={`upcatButton`} href='#about' role='button'>
-                      <b className={`upcatButtonText `}>
-                        Learn More ➤
-                      </b>
-                    </a>
+        <div className={`upcat`} id="upcat">
+          <div className="justify-content-center align-items-center">
+            <div className={`${styles.hero1Div}`}>
+              <div className="text-white textShadow mb-3">
+                <b className={`${styles.catchphrase}`}>UPCAT REVIEWER 2023</b>
               </div>
+              <div className="mb-3">
+                <b className={`${styles.subheading} textShadow`}>
+                  After tutoring students for the SATs in the United States,
+                  which resulted in a 100% success rate, Tagpros is expanding
+                  its review classes to the Philippines, this time for the 2023
+                  UPCAT.
+                </b>
+              </div>
+              <a className={`upcatButton`} href="#about" role="button">
+                <b className={`upcatButtonText `}>Learn More ➤</b>
+              </a>
             </div>
+          </div>
         </div>
-        
       </main>
       <Footer></Footer>
     </>
-  )
+  );
 }
